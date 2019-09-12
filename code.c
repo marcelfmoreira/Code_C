@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 void acha_ai (int e, int n, int *v){
-  int esq =0, dir = n, x = (esq+dir)/2;
+  int esq =0, dir = n-1, x = (esq+dir)/2;
 
-  while (v[x] != e)
+  while (esq <= dir)
     {
       if (e > v[x])
       {
@@ -17,13 +17,16 @@ void acha_ai (int e, int n, int *v){
         dir = x;
         x = (esq+dir)/2;
       }
-      if (esq == dir)
-        printf("\nElemento nao existe no vetor");
+      if (e == v[x])
+      {
+        printf ("\n Elemento encontrado na posicao %d", x);
         return;
+      }  
     }
 
-    printf ("\n Elemento encontrado na posicao %d", x);
-
+    printf("\nElemento nao existe no vetor");
+    return;
+    
   }
 
 
