@@ -5,11 +5,11 @@
 
 //Definição de Estrutura
 
-struct Node{
+typedef struct Node{
 	int e;
 	struct Node* next;
 
-};
+} Node;
 
 //Questao 1:
 
