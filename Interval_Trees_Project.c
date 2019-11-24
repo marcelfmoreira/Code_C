@@ -3,7 +3,7 @@
 #include <math.h>
 #include <conio.h>
 
-//Definições de Estruturas
+//DefiniÃ§Ãµes de Estruturas
 typedef int bool;
 #define false 0;
 #define true 1;
@@ -20,7 +20,7 @@ typedef struct Tree {
 } iTree;
 
 
-//Definição de Funções
+//DefiniÃ§Ã£o de FunÃ§Ãµes
 iTree *get_max(iTree *raiz){
     if (raiz->right == NULL)
         return raiz;
@@ -320,7 +320,7 @@ while (operacao != 0){
     ordenar(raiz);
     interval *res = iTree_Search (raiz,x);
     if (res == NULL)
-        printf("\n não rolou\n");
+        printf("\n nÃ£o rolou\n");
     else
         printf("%d e %d", res->menor, res->maior);
         */
