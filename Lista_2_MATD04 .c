@@ -10,16 +10,16 @@ typedef enum {FALSE, TRUE} bool;
 
 //Definição de Estrutura
 
-struct pilha{
+typedef struct pilha{
   struct cell* top;
   int size;
-}
+} pilha;
 
-struct cell{
+typedef struct cell{
 	char e;
 	struct cell* next;
 
-};
+} cell;
 
 //Questao 1:
 
